@@ -14,6 +14,7 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
+  require 'features/web_helpers.rb'
   ENV['RACK_ENV'] = 'test'
   # require our Sinatra app file
   require File.join(File.dirname(__FILE__), '..', 'app.rb')
